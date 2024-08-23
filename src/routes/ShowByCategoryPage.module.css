@@ -1,0 +1,30 @@
+.controls {
+    display:flex;
+    flex-direction: row;
+    gap:1rem;
+    justify-content: center;
+    margin: 20px;
+}
+
+.pages {
+    text-align: center;
+    margin:20px;
+}
+
+.nextBtn, .prevBtn {
+    border:0;
+    background: none;
+    font-size:2rem;
+}
+
+.prevBtn {
+    transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 800px) {
+    .prevBtn {
+        position:absolute;
+        top:50%;
+        left:20px
+    }
+}

@@ -1,0 +1,46 @@
+.controls {
+    display:flex;
+    flex-direction: row;
+    gap:1rem;
+    justify-content: center;
+    margin: 20px;
+}
+
+.pages {
+    text-align: center;
+    margin:20px;
+}
+
+.nextBtn, .prevBtn {
+    border:0;
+    background: none;
+    font-size:2rem;
+    transition: all .3s  ease-in-out;
+    cursor: pointer;
+    color:black
+}
+
+.prevBtn {
+    transform: rotateY(180deg);
+}
+
+.nextBtn:hover , .prevBtn:hover {
+    scale:1.2
+}
+.nextBtn:active , .prevBtn:active {
+    scale:0.8
+}
+
+@media only screen and (max-width: 480px) {
+    .prevBtn, .nextBtn {
+        position:fixed;
+        top:50vh;
+        z-index: 500;
+    }
+    .prevBtn {
+        left:5px;
+    }
+    .nextBtn {
+        right:5px
+    }
+}
